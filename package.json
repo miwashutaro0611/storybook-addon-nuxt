@@ -29,17 +29,17 @@
   ],
   "scripts": {
     "watch": "tsc --watch",
-    "build": "npm run clean && tsc",
+    "build": "pnpm clean && tsc",
     "clean": "tsc --build --clean",
     "type-check": "tsc --pretty --noEmit",
     "format": "prettier --write .",
-    "format:all": "npm run format .",
+    "format:all": "pnpm format .",
     "lint": "eslint --fix",
-    "lint:all": "npm run lint .",
-    "test:all": "npm run lint:all && npm run type-check",
-    "prepublishOnly": "npm run build",
+    "lint:all": "pnpm lint .",
+    "test:all": "pnpm lint:all && pnpm type-check",
+    "prepublishOnly": "pnpm build",
     "release": "semantic-release",
-    "prepack": "npm run build"
+    "prepack": "pnpm build"
   },
   "dependencies": {
     "loader-utils": "^3.2.1",
