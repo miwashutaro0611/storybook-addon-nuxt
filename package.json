@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "author": "hirotaka",
   "license": "MIT",
+  "type": "module",
   "description": "A no config Storybook addon that makes nuxtjs features just work in Storybook",
   "keywords": [
     "storybook",
